@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script>
+       window.addEventListener("load", function(){
+        var theButton;
+        var ToolbarUIItemProperties = {
+          title: "Periodic Table",
+          icon: "hello-button.png",
+          popup: {
+            href: "popup.html",
+            width: 660,
+            height: 400
+          }
+        }
+        theButton = opera.contexts.toolbar.createItem(ToolbarUIItemProperties);
+        opera.contexts.toolbar.addItem(theButton);
+      }, false);
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
